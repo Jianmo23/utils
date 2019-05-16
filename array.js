@@ -17,6 +17,7 @@ var each = (arraylike, fn) => {
     }
 };
 
+// https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
 var flat = (arr = []) => {
     if ([].flat) {
         return arr.flat(Infinity);

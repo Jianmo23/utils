@@ -2,6 +2,9 @@
 
 // 方法一
 var prefixStr = num => num < 10 ? ('0' + num) : num;
+//或者
+/* JS字符串补全方法padStart()和padEnd(): https://www.cnblogs.com/hongrunhui/p/9370954.html */ 
+// var prefixStr = (num, len = 2) => ('' + num).toString().padStart(len, '0');
 
 var formateData = () => {
     var now = new Date();

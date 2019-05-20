@@ -5,11 +5,8 @@ import {isObject} from './determine-type';
 
 var isEmptyObject = obj => isObject(obj) ? !Object.keys(obj) : true;
 
-var copyObject = obj => {
-    if (!obj) {
-        return obj;
-    }
-
+var copyObject = (obj = {}) => {
+    // return {...obj};
     return JSON.parse(JSON.stringify(obj));
 };
 

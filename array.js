@@ -3,7 +3,7 @@
  */
  import {isArray} from './determine-determine-type';
 
-var toArray = (arraylike, startIndex) => !!Array.from && (Array.from(arraylike) || []).slice(startIndex) || [].slice.call(arraylike, startIndex);
+var toArray = (arraylike = [], startIndex = 0) => !!Array.from && (Array.from(arraylike) || []).slice(startIndex) || [].slice.call(arraylike, startIndex);
 
 var each = (arraylike, fn) => {
     arraylike = toArray(arraylike);
@@ -28,8 +28,21 @@ var flat = (arr = []) => {
     }
 };
 
+var isEmptyArray = arr => !toArray(arr).length;
+
+var copyArray = (arr = []) => [...arr];
+
+var uniqueArray = (arr = []) => [...new Set(arr)];
+
+// 混淆数组
+var randomArray = (arr = []) => arr.slice().sort(() => Math.random() - 0.5);
+
 export {
     toArray,
     each,
-    flat
+    flat,
+    isEmptyArray,
+    copyArray,
+    uniqueArray,
+    randomArray
 }

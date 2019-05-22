@@ -1,7 +1,7 @@
 /*
  * 数组常用方法
  */
- import {isArray} from './determine-determine-type';
+ import {isArray} from '../common/determine-type';
 
 var toArray = (arraylike = [], startIndex = 0) => !!Array.from && (Array.from(arraylike) || []).slice(startIndex) || [].slice.call(arraylike, startIndex);
 

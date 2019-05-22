@@ -1,0 +1,23 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "some common javascript tool methods.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZYY1923/utils.git"
+  },
+  "keywords": [
+    "utils",
+    "tools"
+  ],
+  "author": "朱杨杨 <zhuyangyang@cashbus.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZYY1923/utils/issues"
+  },
+  "homepage": "https://github.com/ZYY1923/utils#readme"
+}

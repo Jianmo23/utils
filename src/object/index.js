@@ -1,7 +1,7 @@
 /*
  * 对象常用方法
  */
-import {isObject} from '../common/determine-type';
+import {isObject} from 'common';
 
 var isEmptyObject = obj => isObject(obj) ? !Object.keys(obj) : true;
 

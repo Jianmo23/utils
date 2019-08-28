@@ -1,3 +1,5 @@
+export * from './debounce.js';
+export * from './throttle.js';
 /*
  * 判断数据类型
  */
